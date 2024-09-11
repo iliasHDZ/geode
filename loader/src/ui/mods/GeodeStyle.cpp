@@ -18,6 +18,7 @@ $on_mod(Loaded) {
     ColorProvider::get()->define("mod-list-updates-available-bg-2"_spr, { 45, 110, 222, 255 });
     ColorProvider::get()->define("mod-list-errors-found"_spr, { 235, 35, 112, 255 });
     ColorProvider::get()->define("mod-list-errors-found-2"_spr, { 245, 27, 27, 255 });
+    ColorProvider::get()->define("mod-list-gray"_spr, { 205, 205, 205, 255 });
     ColorProvider::get()->define("mod-list-tab-deselected-bg"_spr, { 26, 24, 29, 255 });
     ColorProvider::get()->define("mod-list-tab-selected-bg"_spr, { 168, 147, 185, 255 });
     ColorProvider::get()->define("mod-list-tab-selected-bg-alt"_spr, { 147, 163, 185, 255 });
@@ -149,6 +150,7 @@ const char* getGeodeButtonSpriteName(GeodeButtonSprite spr) {
             case GeodeButtonSprite::Install: return "GE_button_01.png"_spr;
             case GeodeButtonSprite::Delete: return "GJ_button_06.png";
             case GeodeButtonSprite::Enable: return "GJ_button_01.png";
+            case GeodeButtonSprite::Gray: return "GJ_button_05.png";
         }
     }
     else {
@@ -158,6 +160,7 @@ const char* getGeodeButtonSpriteName(GeodeButtonSprite spr) {
             case GeodeButtonSprite::Install: return "GE_button_01.png"_spr;
             case GeodeButtonSprite::Delete: return "GJ_button_06.png";
             case GeodeButtonSprite::Enable: return "GJ_button_02.png";
+            case GeodeButtonSprite::Gray: return "GJ_button_05.png";
         }
     }
 }
